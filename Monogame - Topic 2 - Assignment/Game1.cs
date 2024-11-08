@@ -13,7 +13,7 @@ namespace Monogame___Topic_2___Assignment
 
         Rectangle circleRect;
 
-        SpriteFont textFont;
+        SpriteFont pongFont;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -25,7 +25,7 @@ namespace Monogame___Topic_2___Assignment
         {
             // TODO: Add your initialization logic here
 
-            circleRect = new Rectangle(100, 100, 200, 300);
+            circleRect = new Rectangle(400, 300, 40, 40);
 
 
             base.Initialize();
@@ -39,7 +39,7 @@ namespace Monogame___Topic_2___Assignment
             circleTexture = Content.Load<Texture2D>("circle");
             rectTexture = Content.Load<Texture2D>("rectangle");
 
-            textFont = Content.Load<SpriteFont>("TextFont");
+            pongFont = Content.Load<SpriteFont>("pongFont");
 
             // TODO: use this.Content to load your game content here
         }
@@ -63,9 +63,10 @@ namespace Monogame___Topic_2___Assignment
 
 
             _spriteBatch.Draw(circleTexture, circleRect, Color.Plum);
-            _spriteBatch.Draw(rectTexture, new Rectangle(20, 200, 400, 200), Color.MediumBlue);
+            _spriteBatch.Draw(rectTexture, new Rectangle(750,35,23,100), Color.White);
+            _spriteBatch.Draw(rectTexture, new Rectangle(25, 335, 23, 100), Color.White);
 
-            _spriteBatch.DrawString(textFont, "PONG", new Vector2(300, 50), Color.Aqua);
+            _spriteBatch.DrawString(pongFont, "PONG", new Vector2(300, 50), Color.White);
 
             _spriteBatch.End();
 

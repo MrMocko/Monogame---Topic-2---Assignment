@@ -25,6 +25,16 @@
 /processorParam:TextureFormat=Color
 /build:circle.png
 
+#begin pongFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:pongFont.spritefont
+
+#begin pongFont.ttf
+/copy:pongFont.ttf
+
 #begin rectangle.png
 /importer:TextureImporter
 /processor:TextureProcessor
