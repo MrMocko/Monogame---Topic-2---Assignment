@@ -62,11 +62,11 @@ namespace Monogame___Topic_2___Assignment
             _spriteBatch.Begin();
 
 
-            _spriteBatch.Draw(circleTexture, circleRect, Color.Plum);
+            _spriteBatch.Draw(circleTexture, circleRect, Color.White);
             _spriteBatch.Draw(rectTexture, new Rectangle(750,35,23,100), Color.White);
             _spriteBatch.Draw(rectTexture, new Rectangle(25, 335, 23, 100), Color.White);
 
-            _spriteBatch.DrawString(pongFont, "PONG", new Vector2(300, 50), Color.White);
+            _spriteBatch.DrawString(pongFont, "PONG", new Vector2(220, 50), Color.White);
 
             _spriteBatch.End();
 
